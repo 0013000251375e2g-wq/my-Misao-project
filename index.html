@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>morning run</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-shell">
+    <header class="hud">
+      <div>
+        <p class="eyebrow">MORNING RUN / MVP</p>
+        <h1>morning run</h1>
+      </div>
+      <div class="stats" aria-live="polite">
+        <span>コイン <strong id="coin-count">0</strong></span>
+        <span>残り <strong id="lives">3</strong></span>
+        <span>CP <strong id="checkpoint">-</strong></span>
+        <span>時間 <strong id="game-time">00:00</strong></span>
+        <span>強化 <strong id="power-status">---</strong></span>
+        <span>弾 <strong id="ammo-count">-</strong></span>
+        <span>STAGE <strong id="stage-number">1</strong></span>
+      </div>
+    </header>
+
+    <section class="game-frame" aria-label="横スクロールアクションゲーム">
+      <canvas id="game" width="960" height="540"></canvas>
+      <div class="message" id="message">
+        <p class="message-kicker">READY?</p>
+        <h2>ゴールを目指そう</h2>
+        <p>← → / A D で移動　　Space / W でジャンプ</p>
+        <div class="player-input">
+          <label for="player-name">名前</label>
+          <input id="player-name" type="text" maxlength="12" placeholder="名前を入力" value="MISAO" aria-label="プレイヤー名を入力">
+        </div>
+        <button id="start-button" type="button">ゲーム開始</button>
+      </div>
+    </section>
+
+    <footer class="controls">
+      <span><b>A</b><b>D</b> 移動</span>
+      <span><b>SPACE</b> ジャンプ</span>
+      <span><b>F / CLICK</b> 攻撃</span>
+      <span><b>R</b> リスタート</span>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,1 +1,14 @@
-# my-Misao-project
+# morning run
+
+ブラウザで遊べる横スクロールアクションゲームです。
+
+## プレイ
+
+公開ページ: https://0013000251375e2g-wq.github.io/my-Misao-project/
+
+## 操作
+
+- `A` / `D` または左右キー: 移動
+- `Space` / `W` / 上キー: ジャンプ
+- `F` またはクリック: 攻撃
+- `R`: リスタート
